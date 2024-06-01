@@ -80,7 +80,7 @@
             // 
             // btnHaveAcc
             // 
-            this.btnHaveAcc.Location = new System.Drawing.Point(654, 353);
+            this.btnHaveAcc.Location = new System.Drawing.Point(459, 325);
             this.btnHaveAcc.Name = "btnHaveAcc";
             this.btnHaveAcc.Size = new System.Drawing.Size(88, 39);
             this.btnHaveAcc.TabIndex = 9;
@@ -89,7 +89,7 @@
             // 
             // btnRegister
             // 
-            this.btnRegister.Location = new System.Drawing.Point(408, 325);
+            this.btnRegister.Location = new System.Drawing.Point(369, 325);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(88, 39);
             this.btnRegister.TabIndex = 10;
@@ -99,7 +99,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(599, 325);
+            this.label3.Location = new System.Drawing.Point(366, 383);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(189, 16);
             this.label3.TabIndex = 11;
