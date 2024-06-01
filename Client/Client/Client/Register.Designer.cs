@@ -30,7 +30,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnHaveAcc = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,22 +95,12 @@
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = true;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(366, 383);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(189, 16);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "If you already have an acoount";
-            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnHaveAcc);
             this.Controls.Add(this.label2);
@@ -136,6 +125,5 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnHaveAcc;
         private System.Windows.Forms.Button btnRegister;
-        private System.Windows.Forms.Label label3;
     }
 }
