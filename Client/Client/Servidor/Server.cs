@@ -144,7 +144,6 @@ namespace Servidor {
                 Send(Packet.Serialize(packet), userID);
 
             } else if (receivedPacket._GetType() == Pacote.MESSAGE) {
-                //Este metodo foi alterado no teste prático
                 byte[] mensagem = receivedPacket.GetDataAs<byte[]>();
                 Packet packet = new Packet(Pacote.MESSAGE);
                

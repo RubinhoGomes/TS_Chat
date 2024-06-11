@@ -1,6 +1,4 @@
-﻿//Projeto criado por João Sintra 2220865, Francisco Furtadom 2220870, Rúben Amaral 2220848 
-//Unidade Curricular de Tópicos de Segurança
-//Docente: Nuno Simões
+﻿
 
 using System;
 using System.Security.Cryptography;
@@ -20,21 +18,7 @@ using System.Diagnostics;
 using ProtoIP.Crypto;
 using System.Xml.Linq;
 
-// Tanto o NotificationHandler como o NotificationPusher foram desenvolvidos com a ajuda do João Matos
-//Passos para a comunição segura
-/*
-*1. O cliente A conecta-se ao servidor e autentica-se (aquilo que ja fizeste)
-*2. O cliente B faz o mesmo.
-*3. O cliente A informa o servidor de que quer comunicar com o cliente B
-*4. O servidor devolve a chave publica do cliente B e envia-a para o cliente A
-*5. O cliente A recebe a chave publica do B.
-*6. O cliente A gera uma nova chave AES para a comunicacao cliente A - cliente B
-*7. O cliente A encripta a chave AES com a chave publica do cliente B
-*8. O cliente A envia a chave AES encriptada para o servidor
-*9. O servidor envia a chave AES encriptada para o cliente B
-*10. O cliente B usa a sua chave privada para desencriptar a chave AES
-*11. O cliente A e o cliente B trocaram de chaves e podem comunicar de forma segura atraves de uma chave AES partilhada 
- */
+
 
 namespace Client1 {
     public partial class Cliente1 : Form {
@@ -61,22 +45,15 @@ namespace Client1 {
             timer1.Start();
         }
 
-        //Função para enviar a chave publica e receber a chave AES encriptada
         private void SendPublicKeyAndReciveAESkey() {
-            // Generate a new RSA key-pair
             rsa.GenerateKeyPair();
-            //Define the packet type
             Packet publicKeyPacket = new Packet(Pacote.PUBLIC_KEY);
-            //Set the packet payload
             publicKeyPacket.SetPayload(rsa.ExportPublicKey());
-            //Send the packet to Server
             client.Send(Packet.Serialize(publicKeyPacket));
             client.Receive(true);
             this.aesKey = rsa.Decrypt(client.ecryptedAesKey);
         }
 
-        //Função para serializar a mensagem para conseguir mandar a mensagem e a assinatura no mesmo pacote
-        //nos primeros 4 bytes vai ter o tamanho da mensagem encriptada, dps dos 4 bytes vai ter a mensagem em si, dps o tamanho da assinatura e dps a assinatura
         public byte[] SerializeMessage(byte[] mensagem, byte[] assinatura) {
             int mensagemLength = mensagem.Length;
             int assinaturaLength = assinatura.Length;
@@ -96,7 +73,6 @@ namespace Client1 {
                 MessageBox.Show("Mensagem vazia!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            //validacao para o cimprimento da mensagem 255 caracteres
             if (mensagem.Length > 255) {
                 MessageBox.Show("Mensagem demasiado longa MAX 225!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -110,19 +86,14 @@ namespace Client1 {
 
             }
 
-            //Encriptar a mensagem com a chave partilhada
             aes = new AES(sharedAESKey);
             Packet pacote = new Packet(Pacote.MESSAGE);
             byte[] mensagemBytes = Encoding.ASCII.GetBytes(mensagem);
             byte[] msgEncript = aes.Encrypt(mensagemBytes);
 
-            //hash da mensagem encriptada para a assinatura
             byte[] messageHash = new ProtoIP.Crypto.SHA256(msgEncript)._digest;
-            //Assinar a mensagem
             byte[] assinatura = rsa.Sign(messageHash);
-            //Serializar a mensagem para mandar a mensagem e a assinatura no mesmo pacote
             byte[] serializedMessage = SerializeMessage(msgEncript, assinatura);
-            //Envia o pacote com a mensagem e a assinatura
             pacote.SetPayload(serializedMessage);
             client.Send(Packet.Serialize(pacote));
             client.Receive(true);
@@ -133,7 +104,6 @@ namespace Client1 {
         private void btInicioIni_Click(object sender, EventArgs e) {
             tabControl1.SelectedTab = Inicio;
         }
-        //Atualiza a lista de utilizadores
         private void AtualizaListaUsers() {
             listaClientesConnectados.Items.Clear();
             string users = Encoding.UTF8.GetString(client.notification);
@@ -141,7 +111,6 @@ namespace Client1 {
             foreach (var user in dadosUser)
                 listaClientesConnectados.Items.Add(user);
         }
-        //Função para autenticar o cliente com login ou registo
         private void AuthenticateClient(string nome, string password, string tipoPacote) {
             Cursor.Current = Cursors.WaitCursor;
 
@@ -155,7 +124,6 @@ namespace Client1 {
             byte[] mensagemBytes = Encoding.ASCII.GetBytes(nome + ";" + password);
             byte[] mensagemEncriptada = aes.Encrypt(mensagemBytes);
 
-            //Se a autenticação for para fazer login irá enviar um pacote do tipo LOGIN encripta os dados do cliente e envia para o servidor
             if (tipoPacote == "LOGIN") {
                 Packet messagePacket = new Packet(Pacote.LOGIN);
                 messagePacket.SetPayload(mensagemEncriptada);
@@ -163,7 +131,6 @@ namespace Client1 {
                 client.Receive(true);
                 byte[] msgDecrypt = aes.Decrypt(client.login);
                 string validacao = Encoding.UTF8.GetString(msgDecrypt, 0, msgDecrypt.Length);
-                //Se a validação for true o cliente é autenticado e é enviado um pacote do tipo NOTIFICATION para o servidor com a porta para receber as notificações
                 if (validacao == "true") {
                     Packet pacoteNotificacao = new Packet(Pacote.NOTIFICATION);
                     pacoteNotificacao.SetPayload(Encoding.ASCII.GetBytes("" + NOTIFICATION_PORT));
@@ -175,7 +142,6 @@ namespace Client1 {
                     this.username = txtNomeLogin.Text;
 
                     AtualizaListaUsers();
-                    //client.msgRecivedEvent += recieveMessage;
 
                 } else if (validacao == "false") {
                     MessageBox.Show("Credenciais erradas!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -185,7 +151,6 @@ namespace Client1 {
                     MessageBox.Show("Utilizador já online!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     authenticationAttempts++;
                 }
-                //Se a autenticação for para fazer login irá enviar um pacote do tipo REGISTER encripta os dados do cliente e envia para o servidor
             } else if (tipoPacote == "REGISTER") {
                 Packet messagePacket = new Packet(Pacote.REGISTER);
 
@@ -194,7 +159,6 @@ namespace Client1 {
                 client.Receive(true);
                 byte[] msgDecrypt = aes.Decrypt(client.registo);
                 string validacao = Encoding.UTF8.GetString(msgDecrypt, 0, msgDecrypt.Length);
-                //Se a validação for true o cliente é autenticado e é enviado um pacote do tipo NOTIFICATION para o servidor com a porta para receber as notificações
 
                 if (validacao == "true") {
                     Packet pacoteNotificacao = new Packet(Pacote.NOTIFICATION);
@@ -218,13 +182,11 @@ namespace Client1 {
             txtPasswordRegisto.Clear();
             Cursor.Current = Cursors.Default;
         }
-        //Funcão para autenticar o cliente com o servidor
         private void btEntrarLogin_Click(object sender, EventArgs e) {
             AuthenticateClient(txtNomeLogin.Text, txtPasswordLogin.Text, "LOGIN");
         }
 
         private void btTerminarSessao_Click(object sender, EventArgs e) {
-            //Colocar a validação para terminar a sessao colocar false
             client.Disconnect();
             client._notificationHandler.Stop();
             tabControl2.SelectedTab = paginaLogin;
@@ -233,7 +195,6 @@ namespace Client1 {
         private void btVoltarLogin_Click(object sender, EventArgs e) {
             tabControl2.SelectedTab = paginaLogin;
         }
-        //Funcão para autenticar o cliente com o servidor
 
         private void btRegistarUtilizador_Click(object sender, EventArgs e) {
             AuthenticateClient(txtNomeRegisto.Text, txtPasswordRegisto.Text, "REGISTER");
@@ -250,9 +211,7 @@ namespace Client1 {
                 client._notificationHandler.Stop();
             }
         }
-        //Função para conversar com outro cliente
         private void btConversar_Click(object sender, EventArgs e) {
-            //Seleciona o cliente da lista e envia o nome para o servidor
             string nomeUser = listaClientesConnectados.GetItemText(listaClientesConnectados.SelectedItem);
             communicationUsername = nomeUser;
             if (nomeUser == username) {
@@ -263,13 +222,11 @@ namespace Client1 {
                 MessageBox.Show("Selecione um utilizador!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            //Informa o servidor de uma comunicação com o cliente selecionado
             byte[] mensagemBytes = Encoding.ASCII.GetBytes(nomeUser);
             Packet packet = new Packet(Pacote.INFORM_COMUNICATION);
             packet.SetPayload(mensagemBytes);
             client.Send(Packet.Serialize(packet));
             client.Receive(true);
-            //Gera uma chave AES para conversar com o cliente selecionado e manda-a para o servidor
             AES aes2 = new AES();
             aes2.GenerateKey();
             byte[] encriptedAESKey = ProtoIP.Crypto.RSA.Encrypt(aes2._key, client.otherClientPublicKey);
@@ -281,14 +238,10 @@ namespace Client1 {
             conversarCarregado = true;
 
         }
-        //Função para receber a mensagem do servidor
         public void RecieveMessage() {
             string men;
-            //Primeiro verifica se o cliente foi contactado
             if (client.informComunication != null) {
-                //Segundo verifica se o botão de conversar foi carregado se não vai buscar a chaveAES partilhada e o nome do utilizador com quem se está a comunicar
                 if (!conversarCarregado) {
-                    //Depois vai buscar o nome do utilizador que enviou a mensagem e desencripta-o com a chave partilhada para aprentar no chat
                     sharedAESKey = rsa.Decrypt(client.encryptedCommunicationAESKey);
                     if (String.IsNullOrEmpty(communicationUsername) && client.informComunication != null) {
                         AES aes2 = new AES(aesKey);
@@ -297,7 +250,6 @@ namespace Client1 {
                     }
                 }
                 AES aes = new AES(sharedAESKey);
-                //Depois desencripta a mensagem com a chave partilhada e mostra na consola
                 if (client.mensagem != null) {
                     byte[] msg = aes.Decrypt(client.mensagem);
                     men = Encoding.UTF8.GetString(msg, 0, msg.Length);
@@ -307,13 +259,11 @@ namespace Client1 {
             }
         }
 
-        //Função para atualizar a lista de utilizadores conectados
         private void btAtualizar_Click(object sender, EventArgs e) {
             if (clientIsConnected) {
                 AtualizaListaUsers();
             }
         }
-        //Função para receber as mensagem, técnica chamada de polling, de 1 em 1 segundo recebe as mensagens 
         private void timer1_Tick(object sender, EventArgs e) {
 
             timer1.Interval = 1000;

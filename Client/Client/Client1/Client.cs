@@ -30,7 +30,6 @@ namespace Client1 {
 
         public NotificationHandler _notificationHandler = new NotificationHandler();
 
-        // Construtor do cliente que recebe o IP e a porta do servidor 
         public override void OnReceive() {
 
             Packet receivedPacket = AssembleReceivedDataIntoPacket();
@@ -58,7 +57,6 @@ namespace Client1 {
             }
 
         }
-        // Método que envia uma mensagem para o servidor
         public void OnNotificationReceive(byte[] data) {
             Packet receivedPacket = Packet.Deserialize(data);
 
