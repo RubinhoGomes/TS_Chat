@@ -36,13 +36,12 @@
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.Menus = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.nomeUser = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.btTerminarSessao = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btInicioIni = new System.Windows.Forms.Button();
+            this.btTerminarSessao = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
             this.paginaLogin = new System.Windows.Forms.TabPage();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btIrFormRegistar = new System.Windows.Forms.Button();
@@ -52,6 +51,7 @@
             this.txtNomeLogin = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.paginaRegisto = new System.Windows.Forms.TabPage();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btVoltarLogin = new System.Windows.Forms.Button();
@@ -61,19 +61,17 @@
             this.txtNomeRegisto = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.lbVerificacaoHash = new System.Windows.Forms.Label();
-            this.txtHashVerificada = new System.Windows.Forms.TextBox();
-            this.btVerificarHash = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.Inicio.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.Menus.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.paginaLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             this.paginaRegisto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,9 +86,7 @@
             // 
             // Inicio
             // 
-            this.Inicio.Controls.Add(this.btVerificarHash);
-            this.Inicio.Controls.Add(this.txtHashVerificada);
-            this.Inicio.Controls.Add(this.lbVerificacaoHash);
+            this.Inicio.BackColor = System.Drawing.Color.Black;
             this.Inicio.Controls.Add(this.btAtualizar);
             this.Inicio.Controls.Add(this.btConversar);
             this.Inicio.Controls.Add(this.listaClientesConnectados);
@@ -103,75 +99,82 @@
             this.Inicio.Size = new System.Drawing.Size(961, 428);
             this.Inicio.TabIndex = 0;
             this.Inicio.Text = "Inicio";
-            this.Inicio.UseVisualStyleBackColor = true;
             // 
             // btAtualizar
             // 
-            this.btAtualizar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btAtualizar.Location = new System.Drawing.Point(695, 11);
+            this.btAtualizar.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btAtualizar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAtualizar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btAtualizar.Location = new System.Drawing.Point(820, 382);
             this.btAtualizar.Name = "btAtualizar";
-            this.btAtualizar.Size = new System.Drawing.Size(232, 34);
+            this.btAtualizar.Size = new System.Drawing.Size(121, 40);
             this.btAtualizar.TabIndex = 46;
-            this.btAtualizar.Text = "Atualizar";
-            this.btAtualizar.UseVisualStyleBackColor = true;
+            this.btAtualizar.Text = "Refresh";
+            this.btAtualizar.UseVisualStyleBackColor = false;
             this.btAtualizar.Click += new System.EventHandler(this.btAtualizar_Click);
             // 
             // btConversar
             // 
-            this.btConversar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btConversar.Location = new System.Drawing.Point(766, 320);
+            this.btConversar.BackColor = System.Drawing.Color.Black;
+            this.btConversar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btConversar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btConversar.Location = new System.Drawing.Point(682, 382);
             this.btConversar.Name = "btConversar";
-            this.btConversar.Size = new System.Drawing.Size(101, 34);
+            this.btConversar.Size = new System.Drawing.Size(132, 40);
             this.btConversar.TabIndex = 44;
-            this.btConversar.Text = "Conversar";
-            this.btConversar.UseVisualStyleBackColor = true;
+            this.btConversar.Text = "Connect";
+            this.btConversar.UseVisualStyleBackColor = false;
             this.btConversar.Click += new System.EventHandler(this.btConversar_Click);
             // 
             // listaClientesConnectados
             // 
+            this.listaClientesConnectados.BackColor = System.Drawing.Color.Black;
             this.listaClientesConnectados.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listaClientesConnectados.ForeColor = System.Drawing.SystemColors.Window;
             this.listaClientesConnectados.FormattingEnabled = true;
             this.listaClientesConnectados.ItemHeight = 21;
-            this.listaClientesConnectados.Location = new System.Drawing.Point(682, 58);
+            this.listaClientesConnectados.Location = new System.Drawing.Point(682, 6);
             this.listaClientesConnectados.Name = "listaClientesConnectados";
-            this.listaClientesConnectados.Size = new System.Drawing.Size(259, 256);
+            this.listaClientesConnectados.Size = new System.Drawing.Size(259, 361);
             this.listaClientesConnectados.TabIndex = 43;
             // 
             // txtChat
             // 
-            this.txtChat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtChat.BackColor = System.Drawing.Color.Black;
             this.txtChat.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtChat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.txtChat.ForeColor = System.Drawing.Color.DarkRed;
             this.txtChat.Location = new System.Drawing.Point(5, 5);
             this.txtChat.Margin = new System.Windows.Forms.Padding(2);
             this.txtChat.Multiline = true;
             this.txtChat.Name = "txtChat";
             this.txtChat.ReadOnly = true;
             this.txtChat.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtChat.Size = new System.Drawing.Size(672, 318);
+            this.txtChat.Size = new System.Drawing.Size(672, 362);
             this.txtChat.TabIndex = 41;
             this.txtChat.WordWrap = false;
             // 
             // enviar_bt_TP
             // 
-            this.enviar_bt_TP.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.enviar_bt_TP.BackColor = System.Drawing.Color.Black;
+            this.enviar_bt_TP.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enviar_bt_TP.ForeColor = System.Drawing.SystemColors.Control;
             this.enviar_bt_TP.Image = global::Client1.Properties.Resources.icons8_enviado_24;
             this.enviar_bt_TP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.enviar_bt_TP.Location = new System.Drawing.Point(584, 349);
+            this.enviar_bt_TP.Location = new System.Drawing.Point(584, 382);
             this.enviar_bt_TP.Margin = new System.Windows.Forms.Padding(2);
             this.enviar_bt_TP.Name = "enviar_bt_TP";
             this.enviar_bt_TP.Padding = new System.Windows.Forms.Padding(3);
             this.enviar_bt_TP.Size = new System.Drawing.Size(93, 40);
             this.enviar_bt_TP.TabIndex = 38;
-            this.enviar_bt_TP.Text = "      Enviar";
-            this.enviar_bt_TP.UseVisualStyleBackColor = true;
+            this.enviar_bt_TP.Text = "Send";
+            this.enviar_bt_TP.UseVisualStyleBackColor = false;
             this.enviar_bt_TP.Click += new System.EventHandler(this.btEnviarMensagem_Click_1);
             // 
             // txtMensagem
             // 
             this.txtMensagem.AccessibleDescription = "Escrever aqui!";
             this.txtMensagem.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtMensagem.Location = new System.Drawing.Point(5, 352);
+            this.txtMensagem.Location = new System.Drawing.Point(5, 382);
             this.txtMensagem.Margin = new System.Windows.Forms.Padding(2);
             this.txtMensagem.Multiline = true;
             this.txtMensagem.Name = "txtMensagem";
@@ -184,10 +187,10 @@
             this.tabControl2.Controls.Add(this.Menus);
             this.tabControl2.Controls.Add(this.paginaLogin);
             this.tabControl2.Controls.Add(this.paginaRegisto);
-            this.tabControl2.Location = new System.Drawing.Point(2, -21);
+            this.tabControl2.Location = new System.Drawing.Point(2, -19);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1174, 461);
+            this.tabControl2.Size = new System.Drawing.Size(1174, 459);
             this.tabControl2.TabIndex = 34;
             // 
             // Menus
@@ -197,122 +200,112 @@
             this.Menus.Location = new System.Drawing.Point(4, 22);
             this.Menus.Name = "Menus";
             this.Menus.Padding = new System.Windows.Forms.Padding(3);
-            this.Menus.Size = new System.Drawing.Size(1166, 435);
+            this.Menus.Size = new System.Drawing.Size(1166, 433);
             this.Menus.TabIndex = 0;
             this.Menus.Text = "Menu";
             this.Menus.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.panel5.Controls.Add(this.nomeUser);
+            this.panel5.BackColor = System.Drawing.Color.DarkRed;
+            this.panel5.Controls.Add(this.pictureBox1);
+            this.panel5.Controls.Add(this.btInicioIni);
+            this.panel5.Controls.Add(this.btTerminarSessao);
             this.panel5.Controls.Add(this.label11);
-            this.panel5.Controls.Add(this.panel6);
-            this.panel5.Controls.Add(this.panel8);
             this.panel5.Location = new System.Drawing.Point(-4, 3);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(209, 426);
             this.panel5.TabIndex = 34;
             // 
-            // nomeUser
+            // pictureBox1
             // 
-            this.nomeUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomeUser.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.nomeUser.Image = global::Client1.Properties.Resources.icons8_usuário_homem_com_círculo_24__1_;
-            this.nomeUser.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.nomeUser.Location = new System.Drawing.Point(10, 394);
-            this.nomeUser.Name = "nomeUser";
-            this.nomeUser.Size = new System.Drawing.Size(189, 21);
-            this.nomeUser.TabIndex = 43;
-            this.nomeUser.Text = "Nome";
+            this.pictureBox1.Image = global::Client1.Properties.Resources.chat_secure_icon;
+            this.pictureBox1.Location = new System.Drawing.Point(10, 18);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(53, 58);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 43;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btInicioIni
+            // 
+            this.btInicioIni.BackColor = System.Drawing.Color.Black;
+            this.btInicioIni.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btInicioIni.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btInicioIni.FlatAppearance.BorderSize = 0;
+            this.btInicioIni.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInicioIni.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btInicioIni.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btInicioIni.Location = new System.Drawing.Point(10, 317);
+            this.btInicioIni.Margin = new System.Windows.Forms.Padding(0);
+            this.btInicioIni.Name = "btInicioIni";
+            this.btInicioIni.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btInicioIni.Size = new System.Drawing.Size(192, 47);
+            this.btInicioIni.TabIndex = 0;
+            this.btInicioIni.Text = "Home";
+            this.btInicioIni.UseVisualStyleBackColor = false;
+            this.btInicioIni.Click += new System.EventHandler(this.btInicioIni_Click);
+            // 
+            // btTerminarSessao
+            // 
+            this.btTerminarSessao.BackColor = System.Drawing.Color.Black;
+            this.btTerminarSessao.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btTerminarSessao.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTerminarSessao.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btTerminarSessao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btTerminarSessao.Location = new System.Drawing.Point(10, 369);
+            this.btTerminarSessao.Margin = new System.Windows.Forms.Padding(0);
+            this.btTerminarSessao.Name = "btTerminarSessao";
+            this.btTerminarSessao.Size = new System.Drawing.Size(192, 47);
+            this.btTerminarSessao.TabIndex = 0;
+            this.btTerminarSessao.Text = "Quit";
+            this.btTerminarSessao.UseVisualStyleBackColor = false;
+            this.btTerminarSessao.Click += new System.EventHandler(this.btTerminarSessao_Click);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(17, 13);
+            this.label11.Location = new System.Drawing.Point(56, 18);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(161, 45);
+            this.label11.Size = new System.Drawing.Size(151, 45);
             this.label11.TabIndex = 42;
-            this.label11.Text = "Safe Chat";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.panel6.Controls.Add(this.btTerminarSessao);
-            this.panel6.Location = new System.Drawing.Point(7, 270);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(189, 52);
-            this.panel6.TabIndex = 2;
-            // 
-            // btTerminarSessao
-            // 
-            this.btTerminarSessao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.btTerminarSessao.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.btTerminarSessao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btTerminarSessao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btTerminarSessao.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btTerminarSessao.Image = global::Client1.Properties.Resources.icons8_exportar_24__1_;
-            this.btTerminarSessao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btTerminarSessao.Location = new System.Drawing.Point(-3, 3);
-            this.btTerminarSessao.Margin = new System.Windows.Forms.Padding(0);
-            this.btTerminarSessao.Name = "btTerminarSessao";
-            this.btTerminarSessao.Size = new System.Drawing.Size(192, 47);
-            this.btTerminarSessao.TabIndex = 0;
-            this.btTerminarSessao.Text = "Sair";
-            this.btTerminarSessao.UseVisualStyleBackColor = false;
-            this.btTerminarSessao.Click += new System.EventHandler(this.btTerminarSessao_Click);
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.panel8.Controls.Add(this.btInicioIni);
-            this.panel8.Location = new System.Drawing.Point(7, 70);
-            this.panel8.Margin = new System.Windows.Forms.Padding(0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(189, 53);
-            this.panel8.TabIndex = 0;
-            // 
-            // btInicioIni
-            // 
-            this.btInicioIni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.btInicioIni.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.btInicioIni.FlatAppearance.BorderSize = 0;
-            this.btInicioIni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btInicioIni.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btInicioIni.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btInicioIni.Image = global::Client1.Properties.Resources.icons8_página_inicial_24__1_;
-            this.btInicioIni.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btInicioIni.Location = new System.Drawing.Point(-3, 3);
-            this.btInicioIni.Margin = new System.Windows.Forms.Padding(0);
-            this.btInicioIni.Name = "btInicioIni";
-            this.btInicioIni.Size = new System.Drawing.Size(192, 47);
-            this.btInicioIni.TabIndex = 0;
-            this.btInicioIni.Text = "Início";
-            this.btInicioIni.UseVisualStyleBackColor = false;
-            this.btInicioIni.Click += new System.EventHandler(this.btInicioIni_Click);
+            this.label11.Text = "TS CHAT";
             // 
             // paginaLogin
             // 
-            this.paginaLogin.BackColor = System.Drawing.Color.Gainsboro;
+            this.paginaLogin.BackColor = System.Drawing.Color.DarkRed;
+            this.paginaLogin.Controls.Add(this.pictureBox2);
             this.paginaLogin.Controls.Add(this.label7);
             this.paginaLogin.Controls.Add(this.panel1);
             this.paginaLogin.Location = new System.Drawing.Point(4, 22);
             this.paginaLogin.Name = "paginaLogin";
             this.paginaLogin.Padding = new System.Windows.Forms.Padding(3);
-            this.paginaLogin.Size = new System.Drawing.Size(1166, 435);
+            this.paginaLogin.Size = new System.Drawing.Size(1166, 433);
             this.paginaLogin.TabIndex = 1;
             this.paginaLogin.Text = "Login";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox2.Image = global::Client1.Properties.Resources.chat_secure_icon;
+            this.pictureBox2.Location = new System.Drawing.Point(248, 130);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(200, 179);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(547, 75);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(532, 17);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(78, 32);
+            this.label7.Size = new System.Drawing.Size(155, 65);
             this.label7.TabIndex = 5;
             this.label7.Text = "Login";
             // 
@@ -326,19 +319,19 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txtNomeLogin);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(447, 125);
+            this.panel1.Location = new System.Drawing.Point(464, 104);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(279, 169);
+            this.panel1.Size = new System.Drawing.Size(286, 291);
             this.panel1.TabIndex = 4;
             // 
             // btIrFormRegistar
             // 
-            this.btIrFormRegistar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btIrFormRegistar.BackColor = System.Drawing.Color.Black;
             this.btIrFormRegistar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btIrFormRegistar.ForeColor = System.Drawing.Color.White;
-            this.btIrFormRegistar.Location = new System.Drawing.Point(190, 131);
+            this.btIrFormRegistar.Location = new System.Drawing.Point(149, 243);
             this.btIrFormRegistar.Name = "btIrFormRegistar";
-            this.btIrFormRegistar.Size = new System.Drawing.Size(84, 33);
+            this.btIrFormRegistar.Size = new System.Drawing.Size(118, 33);
             this.btIrFormRegistar.TabIndex = 5;
             this.btIrFormRegistar.Text = "Registar";
             this.btIrFormRegistar.UseVisualStyleBackColor = false;
@@ -346,12 +339,12 @@
             // 
             // btEntrarLogin
             // 
-            this.btEntrarLogin.BackColor = System.Drawing.Color.Green;
+            this.btEntrarLogin.BackColor = System.Drawing.Color.Black;
             this.btEntrarLogin.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btEntrarLogin.ForeColor = System.Drawing.Color.White;
-            this.btEntrarLogin.Location = new System.Drawing.Point(15, 131);
+            this.btEntrarLogin.Location = new System.Drawing.Point(17, 243);
             this.btEntrarLogin.Name = "btEntrarLogin";
-            this.btEntrarLogin.Size = new System.Drawing.Size(84, 33);
+            this.btEntrarLogin.Size = new System.Drawing.Size(126, 33);
             this.btEntrarLogin.TabIndex = 4;
             this.btEntrarLogin.Text = "Entrar";
             this.btEntrarLogin.UseVisualStyleBackColor = false;
@@ -360,9 +353,9 @@
             // txtPasswordLogin
             // 
             this.txtPasswordLogin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.txtPasswordLogin.Location = new System.Drawing.Point(108, 89);
+            this.txtPasswordLogin.Location = new System.Drawing.Point(24, 153);
             this.txtPasswordLogin.Name = "txtPasswordLogin";
-            this.txtPasswordLogin.Size = new System.Drawing.Size(129, 25);
+            this.txtPasswordLogin.Size = new System.Drawing.Size(243, 25);
             this.txtPasswordLogin.TabIndex = 1;
             this.txtPasswordLogin.UseSystemPasswordChar = true;
             // 
@@ -370,7 +363,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.label5.Location = new System.Drawing.Point(52, 34);
+            this.label5.Location = new System.Drawing.Point(121, 25);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 17);
             this.label5.TabIndex = 2;
@@ -379,16 +372,16 @@
             // txtNomeLogin
             // 
             this.txtNomeLogin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.txtNomeLogin.Location = new System.Drawing.Point(108, 31);
+            this.txtNomeLogin.Location = new System.Drawing.Point(24, 58);
             this.txtNomeLogin.Name = "txtNomeLogin";
-            this.txtNomeLogin.Size = new System.Drawing.Size(129, 25);
+            this.txtNomeLogin.Size = new System.Drawing.Size(243, 25);
             this.txtNomeLogin.TabIndex = 0;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(34, 92);
+            this.label6.Location = new System.Drawing.Point(110, 119);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 17);
             this.label6.TabIndex = 3;
@@ -396,22 +389,33 @@
             // 
             // paginaRegisto
             // 
-            this.paginaRegisto.BackColor = System.Drawing.Color.Gainsboro;
+            this.paginaRegisto.BackColor = System.Drawing.Color.DarkRed;
+            this.paginaRegisto.Controls.Add(this.pictureBox3);
             this.paginaRegisto.Controls.Add(this.label8);
             this.paginaRegisto.Controls.Add(this.panel2);
             this.paginaRegisto.Location = new System.Drawing.Point(4, 22);
             this.paginaRegisto.Name = "paginaRegisto";
-            this.paginaRegisto.Size = new System.Drawing.Size(1166, 435);
+            this.paginaRegisto.Size = new System.Drawing.Size(1166, 433);
             this.paginaRegisto.TabIndex = 2;
             this.paginaRegisto.Text = "Registo";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Client1.Properties.Resources.chat_secure_icon;
+            this.pictureBox3.Location = new System.Drawing.Point(193, 155);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(225, 176);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(547, 75);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(491, 37);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(99, 32);
+            this.label8.Size = new System.Drawing.Size(197, 65);
             this.label8.TabIndex = 7;
             this.label8.Text = "Registo";
             // 
@@ -427,17 +431,17 @@
             this.panel2.Controls.Add(this.label10);
             this.panel2.Location = new System.Drawing.Point(447, 125);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(279, 169);
+            this.panel2.Size = new System.Drawing.Size(279, 270);
             this.panel2.TabIndex = 6;
             // 
             // btVoltarLogin
             // 
-            this.btVoltarLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btVoltarLogin.BackColor = System.Drawing.Color.Black;
             this.btVoltarLogin.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btVoltarLogin.ForeColor = System.Drawing.Color.White;
-            this.btVoltarLogin.Location = new System.Drawing.Point(190, 131);
+            this.btVoltarLogin.Location = new System.Drawing.Point(143, 223);
             this.btVoltarLogin.Name = "btVoltarLogin";
-            this.btVoltarLogin.Size = new System.Drawing.Size(84, 33);
+            this.btVoltarLogin.Size = new System.Drawing.Size(120, 33);
             this.btVoltarLogin.TabIndex = 5;
             this.btVoltarLogin.Text = "Voltar";
             this.btVoltarLogin.UseVisualStyleBackColor = false;
@@ -445,12 +449,12 @@
             // 
             // btRegistarUtilizador
             // 
-            this.btRegistarUtilizador.BackColor = System.Drawing.Color.Green;
+            this.btRegistarUtilizador.BackColor = System.Drawing.Color.Black;
             this.btRegistarUtilizador.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btRegistarUtilizador.ForeColor = System.Drawing.Color.White;
-            this.btRegistarUtilizador.Location = new System.Drawing.Point(15, 131);
+            this.btRegistarUtilizador.Location = new System.Drawing.Point(15, 223);
             this.btRegistarUtilizador.Name = "btRegistarUtilizador";
-            this.btRegistarUtilizador.Size = new System.Drawing.Size(84, 33);
+            this.btRegistarUtilizador.Size = new System.Drawing.Size(122, 33);
             this.btRegistarUtilizador.TabIndex = 4;
             this.btRegistarUtilizador.Text = "Registar";
             this.btRegistarUtilizador.UseVisualStyleBackColor = false;
@@ -459,9 +463,9 @@
             // txtPasswordRegisto
             // 
             this.txtPasswordRegisto.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.txtPasswordRegisto.Location = new System.Drawing.Point(108, 89);
+            this.txtPasswordRegisto.Location = new System.Drawing.Point(15, 148);
             this.txtPasswordRegisto.Name = "txtPasswordRegisto";
-            this.txtPasswordRegisto.Size = new System.Drawing.Size(129, 25);
+            this.txtPasswordRegisto.Size = new System.Drawing.Size(248, 25);
             this.txtPasswordRegisto.TabIndex = 1;
             this.txtPasswordRegisto.UseSystemPasswordChar = true;
             // 
@@ -469,7 +473,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.label9.Location = new System.Drawing.Point(52, 34);
+            this.label9.Location = new System.Drawing.Point(111, 29);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(47, 17);
             this.label9.TabIndex = 2;
@@ -478,16 +482,16 @@
             // txtNomeRegisto
             // 
             this.txtNomeRegisto.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.txtNomeRegisto.Location = new System.Drawing.Point(108, 31);
+            this.txtNomeRegisto.Location = new System.Drawing.Point(15, 64);
             this.txtNomeRegisto.Name = "txtNomeRegisto";
-            this.txtNomeRegisto.Size = new System.Drawing.Size(129, 25);
+            this.txtNomeRegisto.Size = new System.Drawing.Size(248, 25);
             this.txtNomeRegisto.TabIndex = 0;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(34, 92);
+            this.label10.Location = new System.Drawing.Point(111, 112);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(67, 17);
             this.label10.TabIndex = 3;
@@ -496,33 +500,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // lbVerificacaoHash
-            // 
-            this.lbVerificacaoHash.AutoSize = true;
-            this.lbVerificacaoHash.Location = new System.Drawing.Point(16, 400);
-            this.lbVerificacaoHash.Name = "lbVerificacaoHash";
-            this.lbVerificacaoHash.Size = new System.Drawing.Size(88, 13);
-            this.lbVerificacaoHash.TabIndex = 47;
-            this.lbVerificacaoHash.Text = "Hash verificada:";
-            // 
-            // txtHashVerificada
-            // 
-            this.txtHashVerificada.Location = new System.Drawing.Point(110, 397);
-            this.txtHashVerificada.Name = "txtHashVerificada";
-            this.txtHashVerificada.ReadOnly = true;
-            this.txtHashVerificada.Size = new System.Drawing.Size(100, 22);
-            this.txtHashVerificada.TabIndex = 48;
-            // 
-            // btVerificarHash
-            // 
-            this.btVerificarHash.Location = new System.Drawing.Point(217, 395);
-            this.btVerificarHash.Name = "btVerificarHash";
-            this.btVerificarHash.Size = new System.Drawing.Size(75, 23);
-            this.btVerificarHash.TabIndex = 49;
-            this.btVerificarHash.Text = "Verificar";
-            this.btVerificarHash.UseVisualStyleBackColor = true;
-            this.btVerificarHash.Click += new System.EventHandler(this.btVerificarHash_Click);
             // 
             // Cliente1
             // 
@@ -545,14 +522,15 @@
             this.Menus.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.paginaLogin.ResumeLayout(false);
             this.paginaLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.paginaRegisto.ResumeLayout(false);
             this.paginaRegisto.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -569,9 +547,7 @@
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage Menus;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button btTerminarSessao;
-        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button btInicioIni;
         private System.Windows.Forms.TabPage paginaLogin;
         private System.Windows.Forms.TabPage paginaRegisto;
@@ -592,14 +568,13 @@
         private System.Windows.Forms.TextBox txtNomeRegisto;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label nomeUser;
-        private System.Windows.Forms.ListBox listaClientesConnectados;
         private System.Windows.Forms.Button btConversar;
         private System.Windows.Forms.Button btAtualizar;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label lbVerificacaoHash;
-        private System.Windows.Forms.TextBox txtHashVerificada;
-        private System.Windows.Forms.Button btVerificarHash;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.ListBox listaClientesConnectados;
     }
 }
 

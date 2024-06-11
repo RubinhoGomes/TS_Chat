@@ -55,3 +55,18 @@ C:\Users\joaoa\Desktop\TESTE\projeto\Client1\obj\Debug\Client1.csproj.CoreCompil
 C:\Users\joaoa\Desktop\TESTE\projeto\Client1\obj\Debug\Client1.csproj.CopyComplete
 C:\Users\joaoa\Desktop\TESTE\projeto\Client1\obj\Debug\Client1.exe
 C:\Users\joaoa\Desktop\TESTE\projeto\Client1\obj\Debug\Client1.pdb
+C:\Users\frank\OneDrive\Ambiente de Trabalho\TS_Chat\Client\Client\Client1\bin\Debug\Client1.exe.config
+C:\Users\frank\OneDrive\Ambiente de Trabalho\TS_Chat\Client\Client\Client1\bin\Debug\Client1.exe
+C:\Users\frank\OneDrive\Ambiente de Trabalho\TS_Chat\Client\Client\Client1\bin\Debug\Client1.pdb
+C:\Users\frank\OneDrive\Ambiente de Trabalho\TS_Chat\Client\Client\Client1\bin\Debug\EntityFramework.dll
+C:\Users\frank\OneDrive\Ambiente de Trabalho\TS_Chat\Client\Client\Client1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\frank\OneDrive\Ambiente de Trabalho\TS_Chat\Client\Client\Client1\bin\Debug\EntityFramework.xml
+C:\Users\frank\OneDrive\Ambiente de Trabalho\TS_Chat\Client\Client\Client1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\frank\OneDrive\Ambiente de Trabalho\TS_Chat\Client\Client\Client1\obj\Debug\Client1.csproj.AssemblyReference.cache
+C:\Users\frank\OneDrive\Ambiente de Trabalho\TS_Chat\Client\Client\Client1\obj\Debug\Client1.Cliente1.resources
+C:\Users\frank\OneDrive\Ambiente de Trabalho\TS_Chat\Client\Client\Client1\obj\Debug\Client1.Properties.Resources.resources
+C:\Users\frank\OneDrive\Ambiente de Trabalho\TS_Chat\Client\Client\Client1\obj\Debug\Client1.csproj.GenerateResource.cache
+C:\Users\frank\OneDrive\Ambiente de Trabalho\TS_Chat\Client\Client\Client1\obj\Debug\Client1.csproj.CoreCompileInputs.cache
+C:\Users\frank\OneDrive\Ambiente de Trabalho\TS_Chat\Client\Client\Client1\obj\Debug\Client1.csproj.Up2Date
+C:\Users\frank\OneDrive\Ambiente de Trabalho\TS_Chat\Client\Client\Client1\obj\Debug\Client1.exe
+C:\Users\frank\OneDrive\Ambiente de Trabalho\TS_Chat\Client\Client\Client1\obj\Debug\Client1.pdb

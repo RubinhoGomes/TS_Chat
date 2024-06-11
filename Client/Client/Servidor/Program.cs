@@ -16,7 +16,6 @@ namespace Servidor {
         const int PORT = 1234;
         static void Main() {
 
-            //Verifica se a base de dados está criada, se não estiver cria-a
             using (var dbContext = new AuthContext()) {
                 bool isDatabaseExists = dbContext.Database.Exists();
 

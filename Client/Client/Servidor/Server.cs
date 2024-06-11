@@ -1,7 +1,4 @@
-﻿//Projeto criado por João Sintra 2220865, Francisco Furtadom 2220870, Rúben Amaral 2220848 
-//Unidade Curricular de Tópicos de Segurança
-//Docente: Nuno Simões
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
@@ -15,47 +12,27 @@ using Microsoft.Extensions.Logging;
 using ProtoIP;
 using ProtoIP.Crypto;
 
-// Tanto o NotificationHandler como o NotificationPusher foram desenvolvidos com a ajuda do João Matos
 
 
 namespace Servidor {
     class Server : ProtoServer {
-        private byte[] publicKey; //Chave publica do ultimo cliente conectado
-        public byte[] aesKey; //Chave AES gerada pelo servidor
+        private byte[] publicKey; // Chave publica do cliente
+        public byte[] aesKey; // Chave AES do cliente
         private const string _serverIP = "127.0.0.1";
 
         private List<User> listaUsers = new List<User>(); //Lista de users logados
 
         public NotificationPusher _notificationPusher = new NotificationPusher();
 
-        //Tipo de pacotes:
-        // 1 - PUBLIC_KEY - Função para receber o pacote do cliente e criar uma chave AES ecriptala e enviar para o cliente;
-        // 2 - REGISTER - Função para receber o pacote do cliente e registar o utilizador e validar devidamente o mesmo;
-        //     2.1 - Recebe os dados do utilizador e desencripta-os com a chave AES criada anteriormente pelo servidor;
-        //     2.2 - Com os dados cria um salt com 32 bytes para encriptar a password do utilizador;
-        //     2.3 - Valida se o nome do utilizador existe na base de dados;
-        //     2.4 - Valida se o email do utilizador existe na base de dados;
-        //     2.5 - Insere o utilizador na base de dados e na lista de clietes logados;
+        //Os pacotes utilizados:
+        // 1 - PUBLIC_KEY 
+        // 2 - REGISTER 
         // 3 - LOGIN
-        //     3.1 - Recebe os dados do utilizador e desencripta-os com a chave AES criada anteriormente pelo servidor:
-        //     3.2 - Valida se o utilizador encontra-se online;
-        //     3.3 - Valida se o utilizador existe na base de dados;
-        //     3.4 - Valida se a password do utilizador é igual à password encriptada com o salt na base de dados;
-        //     3.5 - Adiciona o utilizador à lista de clientes logados;
         // 4 - MESSAGE
-        //     4.1 - Recebe os dados do pacote enviado pelo cliente;
-        //     4.2 - Vai buscar à lista de utilizadores logados o utilizador que vai receber a mensagem e envia-a por notificação;
         // 5 - NOTIFICATION
-        //     5.1 - Recebe os dados do pacote enviado pelo cliente com a porta do mesmo;
-        //     5.2 - Define na lista de clientes logados a porta das notificações do cliente que enviou o pacote
-        //     5.3 - Vai buscar à lista de clientes todos os nomes dos clientes logados e envia-os por notificação a todos os clientes logados;
         // 6 - INFORM_COMMUNICATION
-        //      6.1 - Recebe os dados do pacote enviado pelo cliente com a porta do mesmo;
-        //      6.2 - Define na lista de clientes logados o nome do cliente para a comunicação;
-        //      6.3 - Vai buscar à lista de clientes logados o nome do cliente que vai receber a mensagem e envia-a por notificação;
      
 
-        //
         //Função chamada quando um cliente faz um request (Função do ProtoIP)
         public override void OnRequest(int userID) {
 
@@ -98,9 +75,10 @@ namespace Servidor {
                     if (user != null) {
                         packet.SetPayload(aes.Encrypt(Encoding.ASCII.GetBytes("false")));
                         Send(Packet.Serialize(packet), userID); 
-                        Logger.WriteLog(Logger.LogType.ERROR, "Registo falhado cliente já existe.");
+                        Logger.WriteLog(Logger.LogType.ERROR, "Cliente ja registado.");
                         return;
                     }
+
                     var auth = new Auth { Username = userName, Password = passwordBytes, Salt = salt, AccoutCreation = localDate, LastAuthentication = localDate };
                     User cliente = new User(userID, userName, publicKey, aesKey);
                     listaUsers.Add(cliente);
@@ -109,7 +87,7 @@ namespace Servidor {
                  
 
                     packet.SetPayload(aes.Encrypt(Encoding.ASCII.GetBytes("true")));
-                    Logger.WriteLog(Logger.LogType.INFO, "Registo Cliente " + userName + " com sucesso.");
+                    Logger.WriteLog(Logger.LogType.INFO, "Cliente " + userName + "registado com sucesso.");
 
                 }
 
@@ -154,10 +132,10 @@ namespace Servidor {
                             listaUsers.Add(cliente);
                             user.LastAuthentication = DateTime.Now;
                             db.SaveChanges();
-                            Logger.WriteLog(Logger.LogType.INFO, "Login Cliente " + userName + " com sucesso.");
+                            Logger.WriteLog(Logger.LogType.INFO, "Cliente " + userName + " logado com sucesso.");
                             packet.SetPayload(aes.Encrypt(Encoding.ASCII.GetBytes("true")));
                         } else {
-                            Logger.WriteLog(Logger.LogType.ERROR, "Login falhado credenciais incorretas.");
+                            Logger.WriteLog(Logger.LogType.ERROR, "Login falhado password/username errados.");
                             packet.SetPayload(aes.Encrypt(Encoding.ASCII.GetBytes("false")));
                         }
 
@@ -169,23 +147,15 @@ namespace Servidor {
                 //Este metodo foi alterado no teste prático
                 byte[] mensagem = receivedPacket.GetDataAs<byte[]>();
                 Packet packet = new Packet(Pacote.MESSAGE);
-                Packet packet2 = new Packet(Pacote.SIGNATURE_VALIDATION);//Teste prático
                
 
                 Mensagem msg =Mensagem.DeserializeMessage(mensagem);
 
                 if (msg.VerifySignature(listaUsers[userID]._publicKey, msg.message,msg.signature )) {
                     packet.SetPayload(msg.message);
-                    Logger.WriteLog(Logger.LogType.INFO, "Conversação entre clientes:");//Teste prático
-                    packet2.SetPayload(Encoding.ASCII.GetBytes("true"));//Teste prático
                     this._notificationPusher.PushNotification(_serverIP, GetUserNotificationHandlerPort(listaUsers, listaUsers[userID].communicationUsername), Packet.Serialize(packet));
-                    this._notificationPusher.PushNotification(_serverIP, GetUserNotificationHandlerPort(listaUsers, listaUsers[userID].communicationUsername), Packet.Serialize(packet2));//Teste prático
-                   
                 } else {
-                    packet2.SetPayload(Encoding.ASCII.GetBytes("false"));//Teste prático
                     this._notificationPusher.PushNotification(_serverIP, GetUserNotificationHandlerPort(listaUsers, listaUsers[userID].communicationUsername), Packet.Serialize(packet));
-                    this._notificationPusher.PushNotification(_serverIP, GetUserNotificationHandlerPort(listaUsers, listaUsers[userID].communicationUsername), Packet.Serialize(packet2));//Teste prático
-
                     Logger.WriteLog(Logger.LogType.ERROR, "Mensagem enviada para o cliente assinatura inválida.");
                 }
                 
@@ -248,7 +218,6 @@ namespace Servidor {
 
         }
 
-        //Função para enviar o nome do cliente comunicador para o cliente comunicado para mostrar no ecrã o nome do cliente que está a comunicar com ele
         private void SendComunicationUsername(List<User> listaUsers, string username, string comunicationUsername) {
             Packet packet = new Packet(Pacote.INFORM_COMUNICATION_USERNAME);
             int userIndex = GetUserIndex(listaUsers, username);
@@ -258,13 +227,11 @@ namespace Servidor {
             Logger.WriteLog(Logger.LogType.INFO, "Nome do cliente comunicador enviado para o cliente comunicado.");
             packet.SetPayload(nomeEnc);
             this._notificationPusher.PushNotification(_serverIP, GetUserNotificationHandlerPort(listaUsers, username), Packet.Serialize(packet));
-            // Send(Packet.Serialize(packet), userID);
 
         }
 
         
 
-        //Função para comparar dois arrays de bytes por exemplo para comparar passwords
         private static bool ComparaArrayBytes(byte[] a, byte[] b) {
             if (a.Length != b.Length) return false;
             for (int i = 0; i < a.Length; ++i) {
@@ -273,7 +240,6 @@ namespace Servidor {
             }
             return true;
         }
-        //Função para obter a porta da NotificationHandler de um cliente pelo nome para conseguir enviar notificações
         private int GetUserNotificationHandlerPort(List<User> listaUsers, string username) {
             int porta = 0;
             foreach (User user in listaUsers) {
@@ -284,7 +250,6 @@ namespace Servidor {
             }
             return porta;
         }
-        //Função para obter a publicKey de um cliente pelo nome
         private byte[] GetUserPublicKey(List<User> listaUsers, string username) {
             byte[] publicKey = new byte[0];
             foreach (User user in listaUsers) {
@@ -295,7 +260,6 @@ namespace Servidor {
             }
             return publicKey;
         }
-        //Função para obter a AES key de um cliente pelo userID
         private byte[] GetUserAESKey(List<User> listaUsers, int userID) {
             byte[] userAesKey = new byte[0];
             foreach (User user in listaUsers) {
@@ -307,7 +271,6 @@ namespace Servidor {
             return userAesKey;
         }
 
-        //função para ver index do user na lista com um nome
         private int GetUserIndex(List<User> listaUsers, string username) {
             int index = 0;
             foreach (User user in listaUsers) {
@@ -318,7 +281,6 @@ namespace Servidor {
             }
             return index;
         }
-        //Função para ver se um cliente está online pelo nome
         private bool ClientIsOnline(List<User> listaUsers, string username) {
             bool existe = false;
             foreach (User user in listaUsers) {
@@ -329,11 +291,9 @@ namespace Servidor {
             }
             return existe;
         }
-        //Função chamada quando um cliente conecta-se ao servidor (Função do ProtoIP)
         public override void OnUserConnect(int usedID) {
             Logger.WriteLog(Logger.LogType.INFO, "Cliente Conectado.");
         }
-        //Função chamada quando um cliente desconecta-se-se ao servidor (Função do ProtoIP)
         public override void OnUserDisconnect(int usedID) {
             Logger.WriteLog(Logger.LogType.INFO, "Cliente" + listaUsers[usedID].username + " Desconectado.");
 

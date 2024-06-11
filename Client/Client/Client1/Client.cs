@@ -1,7 +1,4 @@
-﻿//Projeto criado por João Sintra 2220865, Francisco Furtadom 2220870, Rúben Amaral 2220848 
-//Unidade Curricular de Tópicos de Segurança
-//Docente: Nuno Simões
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
@@ -12,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProtoIP;
 
-// Tanto o NotificationHandler como o NotificationPusher foram desenvolvidos com a ajuda do João Matos
 
 namespace Client1 {
 
@@ -29,13 +25,12 @@ namespace Client1 {
         public byte[] encryptedCommunicationAESKey;
         public byte[] communicationUsername;
         public byte[] random;
-        public byte[] signatureValidation;//Teste prático
 
 
 
         public NotificationHandler _notificationHandler = new NotificationHandler();
 
-        //Função chamada quando recebe um pacote do servidor (Função do ProtoIP)
+        // Construtor do cliente que recebe o IP e a porta do servidor 
         public override void OnReceive() {
 
             Packet receivedPacket = AssembleReceivedDataIntoPacket();
@@ -63,7 +58,7 @@ namespace Client1 {
             }
 
         }
-        // A lógica para lidar com as notificações recebidas do servidor
+        // Método que envia uma mensagem para o servidor
         public void OnNotificationReceive(byte[] data) {
             Packet receivedPacket = Packet.Deserialize(data);
 
@@ -87,11 +82,6 @@ namespace Client1 {
                 case Pacote.INFORM_COMUNICATION_USERNAME:
                     this.communicationUsername = receivedPacket.GetDataAs<byte[]>();
                     Debug.WriteLine("CLIENT: Received Comunication Username!");
-                    break;
-                //Teste prático
-                case Pacote.SIGNATURE_VALIDATION:
-                    this.signatureValidation = receivedPacket.GetDataAs<byte[]>();
-                    Debug.WriteLine("CLIENT: Received Signature Verification!");
                     break;
                 default:
                     break;

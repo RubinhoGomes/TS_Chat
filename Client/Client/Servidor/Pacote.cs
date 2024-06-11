@@ -17,8 +17,6 @@ namespace Servidor {
         public const int INFORM_COMUNICATION = 108;
         public const int COMMUNICATION_AES_ENCRYPTED_KEY = 109;
         public const int INFORM_COMUNICATION_USERNAME = 110;
-        //ficha pratica
-        public const int SIGNATURE_VALIDATION = 111;
 
     }
 }

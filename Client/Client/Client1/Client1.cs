@@ -173,7 +173,6 @@ namespace Client1 {
                     clientIsConnected = true;
                     tabControl2.SelectedTab = Menus;
                     this.username = txtNomeLogin.Text;
-                    nomeUser.Text = username;
 
                     AtualizaListaUsers();
                     //client.msgRecivedEvent += recieveMessage;
@@ -204,7 +203,6 @@ namespace Client1 {
                     client.Receive(true);
                     tabControl2.SelectedTab = Menus;
                     this.username = txtNomeRegisto.Text;
-                    nomeUser.Text = username;
                     clientIsConnected = true;
 
                     AtualizaListaUsers();

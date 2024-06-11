@@ -121,6 +121,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-usuário-homem-com-círculo-24 %281%29.png" />
+    <None Include="Resources\chat-secure-icon.png" />
     <Content Include="Resources\icons8-usuário-homem-com-círculo-24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

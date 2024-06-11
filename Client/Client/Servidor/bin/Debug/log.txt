@@ -282,3 +282,125 @@
 27/06/2023 17:28:10 - [INFO] - Pacote para informar uma comunicação entre dois clientes enviada.
 27/06/2023 17:28:11 - [INFO] - Chave AES para a comunicação dos clientes enviada.
 27/06/2023 17:28:14 - [INFO] - Conversação entre clientes:
+11/06/2024 16:53:53 - [INFO] - Servidor Iniciado na porta: 1234
+11/06/2024 16:54:02 - [INFO] - Cliente Conectado.
+11/06/2024 16:54:02 - [INFO] - Chave publica recebida.
+11/06/2024 16:54:02 - [INFO] - Chave AES encriptada enviada para o cliente.
+11/06/2024 16:54:02 - [INFO] - Pedido para Registo recebido.
+11/06/2024 16:54:03 - [INFO] - Registo Cliente ola com sucesso.
+11/06/2024 16:54:03 - [INFO] - Notificação para todos os utilizadores enviada.
+11/06/2024 16:54:50 - [INFO] - Cliente Conectado.
+11/06/2024 16:54:50 - [INFO] - Chave publica recebida.
+11/06/2024 16:54:50 - [INFO] - Chave AES encriptada enviada para o cliente.
+11/06/2024 16:54:50 - [INFO] - Pedido para Registo recebido.
+11/06/2024 16:54:50 - [INFO] - Registo Cliente aaa com sucesso.
+11/06/2024 16:54:50 - [INFO] - Notificação para todos os utilizadores enviada.
+11/06/2024 16:55:01 - [INFO] - Nome do cliente comunicador enviado para o cliente comunicado.
+11/06/2024 16:55:01 - [INFO] - Pacote para informar uma comunicação entre dois clientes enviada.
+11/06/2024 16:55:01 - [INFO] - Chave AES para a comunicação dos clientes enviada.
+11/06/2024 16:55:04 - [INFO] - Conversação entre clientes:
+11/06/2024 16:55:17 - [INFO] - Nome do cliente comunicador enviado para o cliente comunicado.
+11/06/2024 16:55:17 - [INFO] - Pacote para informar uma comunicação entre dois clientes enviada.
+11/06/2024 16:55:17 - [INFO] - Chave AES para a comunicação dos clientes enviada.
+11/06/2024 16:55:18 - [INFO] - Conversação entre clientes:
+11/06/2024 17:08:19 - [INFO] - Servidor Iniciado na porta: 1234
+11/06/2024 17:08:22 - [INFO] - Cliente Conectado.
+11/06/2024 17:08:22 - [INFO] - Chave publica recebida.
+11/06/2024 17:08:22 - [INFO] - Chave AES encriptada enviada para o cliente.
+11/06/2024 17:08:22 - [INFO] - Pedido para Login recebido.
+11/06/2024 17:08:25 - [INFO] - Login Cliente aaa com sucesso.
+11/06/2024 17:08:25 - [INFO] - Notificação para todos os utilizadores enviada.
+11/06/2024 17:09:57 - [INFO] - Servidor Iniciado na porta: 1234
+11/06/2024 17:10:05 - [INFO] - Cliente Conectado.
+11/06/2024 17:10:05 - [INFO] - Chave publica recebida.
+11/06/2024 17:10:05 - [INFO] - Chave AES encriptada enviada para o cliente.
+11/06/2024 17:10:05 - [INFO] - Pedido para Registo recebido.
+11/06/2024 17:10:07 - [INFO] - Registo Cliente fran com sucesso.
+11/06/2024 17:10:07 - [INFO] - Notificação para todos os utilizadores enviada.
+11/06/2024 17:37:06 - [INFO] - Servidor Iniciado na porta: 1234
+11/06/2024 17:37:26 - [INFO] - Cliente Conectado.
+11/06/2024 17:37:26 - [INFO] - Chave publica recebida.
+11/06/2024 17:37:26 - [INFO] - Chave AES encriptada enviada para o cliente.
+11/06/2024 17:37:26 - [INFO] - Pedido para Registo recebido.
+11/06/2024 17:37:29 - [INFO] - Registo Cliente maria com sucesso.
+11/06/2024 17:37:29 - [INFO] - Notificação para todos os utilizadores enviada.
+11/06/2024 17:40:43 - [INFO] - Servidor Iniciado na porta: 1234
+11/06/2024 17:41:17 - [INFO] - Servidor Iniciado na porta: 1234
+11/06/2024 17:41:21 - [INFO] - Cliente Conectado.
+11/06/2024 17:41:21 - [INFO] - Chave publica recebida.
+11/06/2024 17:41:21 - [INFO] - Chave AES encriptada enviada para o cliente.
+11/06/2024 17:41:21 - [INFO] - Pedido para Login recebido.
+11/06/2024 17:41:23 - [INFO] - Login Cliente aaa com sucesso.
+11/06/2024 17:41:23 - [INFO] - Notificação para todos os utilizadores enviada.
+11/06/2024 17:41:47 - [INFO] - Cliente Conectado.
+11/06/2024 17:41:47 - [INFO] - Chave publica recebida.
+11/06/2024 17:41:47 - [INFO] - Chave AES encriptada enviada para o cliente.
+11/06/2024 17:41:47 - [INFO] - Pedido para Login recebido.
+11/06/2024 17:41:47 - [INFO] - Login Cliente maria com sucesso.
+11/06/2024 17:41:47 - [INFO] - Notificação para todos os utilizadores enviada.
+11/06/2024 17:42:03 - [INFO] - Nome do cliente comunicador enviado para o cliente comunicado.
+11/06/2024 17:42:03 - [INFO] - Pacote para informar uma comunicação entre dois clientes enviada.
+11/06/2024 17:42:03 - [INFO] - Chave AES para a comunicação dos clientes enviada.
+11/06/2024 17:42:07 - [INFO] - Nome do cliente comunicador enviado para o cliente comunicado.
+11/06/2024 17:42:07 - [INFO] - Pacote para informar uma comunicação entre dois clientes enviada.
+11/06/2024 17:42:07 - [INFO] - Chave AES para a comunicação dos clientes enviada.
+11/06/2024 17:42:16 - [INFO] - Conversação entre clientes:
+11/06/2024 17:42:42 - [INFO] - Cliente Conectado.
+11/06/2024 17:42:42 - [INFO] - Chave publica recebida.
+11/06/2024 17:42:42 - [INFO] - Chave AES encriptada enviada para o cliente.
+11/06/2024 17:42:42 - [INFO] - Pedido para Login recebido.
+11/06/2024 17:42:42 - [ERROR] - Login falhado cliente já online.
+11/06/2024 17:42:54 - [INFO] - Chave publica recebida.
+11/06/2024 17:42:54 - [INFO] - Chave AES encriptada enviada para o cliente.
+11/06/2024 17:42:54 - [INFO] - Pedido para Registo recebido.
+11/06/2024 17:42:54 - [INFO] - Registo Cliente bbb com sucesso.
+11/06/2024 17:46:37 - [INFO] - Servidor Iniciado na porta: 1234
+11/06/2024 17:46:56 - [INFO] - Cliente Conectado.
+11/06/2024 17:46:56 - [INFO] - Chave publica recebida.
+11/06/2024 17:46:56 - [INFO] - Chave AES encriptada enviada para o cliente.
+11/06/2024 17:46:56 - [INFO] - Pedido para Login recebido.
+11/06/2024 17:46:58 - [INFO] - Login Cliente aaa com sucesso.
+11/06/2024 17:46:58 - [INFO] - Notificação para todos os utilizadores enviada.
+11/06/2024 17:47:04 - [INFO] - Cliente Conectado.
+11/06/2024 17:47:04 - [INFO] - Chave publica recebida.
+11/06/2024 17:47:04 - [INFO] - Chave AES encriptada enviada para o cliente.
+11/06/2024 17:47:04 - [INFO] - Pedido para Login recebido.
+11/06/2024 17:47:04 - [INFO] - Login Cliente maria com sucesso.
+11/06/2024 17:47:04 - [INFO] - Notificação para todos os utilizadores enviada.
+11/06/2024 17:47:08 - [INFO] - Nome do cliente comunicador enviado para o cliente comunicado.
+11/06/2024 17:47:08 - [INFO] - Pacote para informar uma comunicação entre dois clientes enviada.
+11/06/2024 17:47:08 - [INFO] - Chave AES para a comunicação dos clientes enviada.
+11/06/2024 17:47:16 - [INFO] - Nome do cliente comunicador enviado para o cliente comunicado.
+11/06/2024 17:47:16 - [INFO] - Pacote para informar uma comunicação entre dois clientes enviada.
+11/06/2024 17:47:16 - [INFO] - Chave AES para a comunicação dos clientes enviada.
+11/06/2024 17:47:59 - [INFO] - Conversação entre clientes:
+11/06/2024 17:48:08 - [INFO] - Conversação entre clientes:
+11/06/2024 17:48:22 - [INFO] - Conversação entre clientes:
+11/06/2024 17:48:29 - [INFO] - Conversação entre clientes:
+11/06/2024 22:26:08 - [INFO] - Servidor Iniciado na porta: 1234
+11/06/2024 22:26:22 - [INFO] - Cliente Conectado.
+11/06/2024 22:26:22 - [INFO] - Chave publica recebida.
+11/06/2024 22:26:22 - [INFO] - Chave AES encriptada enviada para o cliente.
+11/06/2024 22:26:22 - [INFO] - Pedido para Login recebido.
+11/06/2024 22:26:24 - [INFO] - Login Cliente aaa com sucesso.
+11/06/2024 22:26:24 - [INFO] - Notificação para todos os utilizadores enviada.
+11/06/2024 22:26:51 - [INFO] - Cliente Conectado.
+11/06/2024 22:26:52 - [INFO] - Chave publica recebida.
+11/06/2024 22:26:52 - [INFO] - Chave AES encriptada enviada para o cliente.
+11/06/2024 22:26:52 - [INFO] - Pedido para Login recebido.
+11/06/2024 22:26:52 - [INFO] - Login Cliente maria com sucesso.
+11/06/2024 22:26:52 - [INFO] - Notificação para todos os utilizadores enviada.
+11/06/2024 22:27:02 - [INFO] - Nome do cliente comunicador enviado para o cliente comunicado.
+11/06/2024 22:27:02 - [INFO] - Pacote para informar uma comunicação entre dois clientes enviada.
+11/06/2024 22:27:02 - [INFO] - Chave AES para a comunicação dos clientes enviada.
+11/06/2024 22:27:08 - [INFO] - Nome do cliente comunicador enviado para o cliente comunicado.
+11/06/2024 22:27:08 - [INFO] - Pacote para informar uma comunicação entre dois clientes enviada.
+11/06/2024 22:27:08 - [INFO] - Chave AES para a comunicação dos clientes enviada.
+11/06/2024 22:27:17 - [INFO] - Conversação entre clientes:
+11/06/2024 22:33:46 - [INFO] - Servidor Iniciado na porta: 1234
+11/06/2024 22:34:03 - [INFO] - Cliente Conectado.
+11/06/2024 22:34:03 - [INFO] - Chave publica recebida.
+11/06/2024 22:34:03 - [INFO] - Chave AES encriptada enviada para o cliente.
+11/06/2024 22:34:03 - [INFO] - Pedido para Registo recebido.
+11/06/2024 22:34:05 - [INFO] - Registo Cliente ruben com sucesso.
+11/06/2024 22:34:05 - [INFO] - Notificação para todos os utilizadores enviada.
