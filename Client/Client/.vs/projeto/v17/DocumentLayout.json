@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D29D30C6-FF20-4ABC-A8D6-98794B4A626F}|Client1\\Client1.csproj|c:\\users\\ruben\\onedrive\\ambiente de trabalho\\ipl\\2220852_2220859\\ts_chat\\client\\client\\client1\\client1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D29D30C6-FF20-4ABC-A8D6-98794B4A626F}|Client1\\Client1.csproj|solutionrelative:client1\\client1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Client1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Client1\\Client1.cs",
+              "RelativeDocumentMoniker": "Client1\\Client1.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Client1\\Client1.cs [Design]",
+              "RelativeToolTip": "Client1\\Client1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T22:02:09.105Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

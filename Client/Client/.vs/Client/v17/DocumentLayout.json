@@ -1,18 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\frank\\OneDrive\\Ambiente de Trabalho\\TS_Chat\\Client\\Client\\",
+  "WorkspaceRootPath": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DAA770C2-AB95-4A1B-8209-A57F3C435408}|Client\\Client.csproj|c:\\users\\frank\\onedrive\\ambiente de trabalho\\ts_chat\\client\\client\\client\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DAA770C2-AB95-4A1B-8209-A57F3C435408}|Client\\Client.csproj|solutionrelative:client\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{0F7BCF19-58C4-4B25-9F78-8DEE71DEDF6B}|Server\\Server.csproj|c:\\users\\ruben\\onedrive\\ambiente de trabalho\\ipl\\2220852_2220859\\ts_chat\\client\\client\\server\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F7BCF19-58C4-4B25-9F78-8DEE71DEDF6B}|Server\\Server.csproj|solutionrelative:server\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAA770C2-AB95-4A1B-8209-A57F3C435408}|Client\\Client.csproj|c:\\users\\frank\\onedrive\\ambiente de trabalho\\ts_chat\\client\\client\\client\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DAA770C2-AB95-4A1B-8209-A57F3C435408}|Client\\Client.csproj|solutionrelative:client\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{0F7BCF19-58C4-4B25-9F78-8DEE71DEDF6B}|Server\\Server.csproj|c:\\users\\ruben\\onedrive\\ambiente de trabalho\\ipl\\2220852_2220859\\ts_chat\\client\\client\\server\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F7BCF19-58C4-4B25-9F78-8DEE71DEDF6B}|Server\\Server.csproj|solutionrelative:server\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F7BCF19-58C4-4B25-9F78-8DEE71DEDF6B}|Server\\Server.csproj|C:\\Users\\frank\\OneDrive\\Ambiente de Trabalho\\TS_Chat\\Client\\Client\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F7BCF19-58C4-4B25-9F78-8DEE71DEDF6B}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F7BCF19-58C4-4B25-9F78-8DEE71DEDF6B}|Server\\Server.csproj|c:\\users\\ruben\\onedrive\\ambiente de trabalho\\ipl\\2220852_2220859\\ts_chat\\client\\client\\server\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F7BCF19-58C4-4B25-9F78-8DEE71DEDF6B}|Server\\Server.csproj|solutionrelative:server\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F7BCF19-58C4-4B25-9F78-8DEE71DEDF6B}|Server\\Server.csproj|c:\\users\\ruben\\onedrive\\ambiente de trabalho\\ipl\\2220852_2220859\\ts_chat\\client\\client\\server\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F7BCF19-58C4-4B25-9F78-8DEE71DEDF6B}|Server\\Server.csproj|solutionrelative:server\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F7BCF19-58C4-4B25-9F78-8DEE71DEDF6B}|Server\\Server.csproj|c:\\users\\ruben\\onedrive\\ambiente de trabalho\\ipl\\2220852_2220859\\ts_chat\\client\\client\\server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F7BCF19-58C4-4B25-9F78-8DEE71DEDF6B}|Server\\Server.csproj|solutionrelative:server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F7BCF19-58C4-4B25-9F78-8DEE71DEDF6B}|Server\\Server.csproj|c:\\users\\ruben\\onedrive\\ambiente de trabalho\\ipl\\2220852_2220859\\ts_chat\\client\\client\\server\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F7BCF19-58C4-4B25-9F78-8DEE71DEDF6B}|Server\\Server.csproj|solutionrelative:server\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAA770C2-AB95-4A1B-8209-A57F3C435408}|Client\\Client.csproj|c:\\users\\ruben\\onedrive\\ambiente de trabalho\\ipl\\2220852_2220859\\ts_chat\\client\\client\\client\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAA770C2-AB95-4A1B-8209-A57F3C435408}|Client\\Client.csproj|solutionrelative:client\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAA770C2-AB95-4A1B-8209-A57F3C435408}|Client\\Client.csproj|c:\\users\\ruben\\onedrive\\ambiente de trabalho\\ipl\\2220852_2220859\\ts_chat\\client\\client\\client\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAA770C2-AB95-4A1B-8209-A57F3C435408}|Client\\Client.csproj|solutionrelative:client\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAA770C2-AB95-4A1B-8209-A57F3C435408}|Client\\Client.csproj|c:\\users\\ruben\\onedrive\\ambiente de trabalho\\ipl\\2220852_2220859\\ts_chat\\client\\client\\client\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAA770C2-AB95-4A1B-8209-A57F3C435408}|Client\\Client.csproj|solutionrelative:client\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAA770C2-AB95-4A1B-8209-A57F3C435408}|Client\\Client.csproj|c:\\users\\ruben\\onedrive\\ambiente de trabalho\\ipl\\2220852_2220859\\ts_chat\\client\\client\\client\\client1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAA770C2-AB95-4A1B-8209-A57F3C435408}|Client\\Client.csproj|solutionrelative:client\\client1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAA770C2-AB95-4A1B-8209-A57F3C435408}|Client\\Client.csproj|C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAA770C2-AB95-4A1B-8209-A57F3C435408}|Client\\Client.csproj|solutionrelative:client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,39 +59,144 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Chat.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\Ambiente de Trabalho\\TS_Chat\\Client\\Client\\Client\\Chat.cs",
-              "RelativeDocumentMoniker": "Client\\Chat.cs",
-              "ToolTip": "C:\\Users\\frank\\OneDrive\\Ambiente de Trabalho\\TS_Chat\\Client\\Client\\Client\\Chat.cs [Design]",
-              "RelativeToolTip": "Client\\Chat.cs [Design]",
+              "Title": "Auth.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Server\\Auth.cs",
+              "RelativeDocumentMoniker": "Server\\Auth.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Server\\Auth.cs",
+              "RelativeToolTip": "Server\\Auth.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvxAAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T21:47:08.424Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-10T21:57:08.537Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Register.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\Ambiente de Trabalho\\TS_Chat\\Client\\Client\\Client\\Register.cs",
-              "RelativeDocumentMoniker": "Client\\Register.cs",
-              "ToolTip": "C:\\Users\\frank\\OneDrive\\Ambiente de Trabalho\\TS_Chat\\Client\\Client\\Client\\Register.cs [Design]",
-              "RelativeToolTip": "Client\\Register.cs [Design]",
+              "Title": "Logger.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Server\\Logger.cs",
+              "RelativeDocumentMoniker": "Server\\Logger.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Server\\Logger.cs",
+              "RelativeToolTip": "Server\\Logger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T17:43:20.191Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-10T21:55:59.567Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\Ambiente de Trabalho\\TS_Chat\\Client\\Client\\Server\\Program.cs",
-              "RelativeDocumentMoniker": "Server\\Program.cs",
-              "ToolTip": "C:\\Users\\frank\\OneDrive\\Ambiente de Trabalho\\TS_Chat\\Client\\Client\\Server\\Program.cs",
-              "RelativeToolTip": "Server\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAQAAAA",
+              "Title": "Message.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Server\\Message.cs",
+              "RelativeDocumentMoniker": "Server\\Message.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Server\\Message.cs",
+              "RelativeToolTip": "Server\\Message.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T07:12:12.509Z",
+              "WhenOpened": "2024-06-10T21:55:41.34Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Packet.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Server\\Packet.cs",
+              "RelativeDocumentMoniker": "Server\\Packet.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Server\\Packet.cs",
+              "RelativeToolTip": "Server\\Packet.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T21:55:21.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Server.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Server\\Server.cs",
+              "RelativeDocumentMoniker": "Server\\Server.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Server\\Server.cs",
+              "RelativeToolTip": "Server\\Server.cs",
+              "ViewState": "AQIAAEsBAAAAAAAAAADwv2UBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T21:54:58.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Server\\User.cs",
+              "RelativeDocumentMoniker": "Server\\User.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Server\\User.cs",
+              "RelativeToolTip": "Server\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T21:54:23.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Client\\User.cs",
+              "RelativeDocumentMoniker": "Client\\User.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Client\\User.cs",
+              "RelativeToolTip": "Client\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T21:53:15.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Packet.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Client\\Packet.cs",
+              "RelativeDocumentMoniker": "Client\\Packet.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Client\\Packet.cs",
+              "RelativeToolTip": "Client\\Packet.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T21:52:26.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Client\\Client.cs",
+              "RelativeDocumentMoniker": "Client\\Client.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Client\\Client.cs",
+              "RelativeToolTip": "Client\\Client.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAQwHEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T21:52:04.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Client1.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Client\\Client1.cs",
+              "RelativeDocumentMoniker": "Client\\Client1.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Client\\Client1.cs",
+              "RelativeToolTip": "Client\\Client1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T21:20:37.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Client\\Program.cs",
+              "RelativeDocumentMoniker": "Client\\Program.cs",
+              "ToolTip": "C:\\Users\\ruben\\OneDrive\\Ambiente de Trabalho\\IPL\\2220852_2220859\\TS_Chat\\Client\\Client\\Client\\Program.cs",
+              "RelativeToolTip": "Client\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T16:09:31.894Z"
             }
           ]
         }
