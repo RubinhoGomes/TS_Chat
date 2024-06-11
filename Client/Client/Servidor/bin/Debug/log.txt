@@ -404,3 +404,30 @@
 11/06/2024 22:34:03 - [INFO] - Pedido para Registo recebido.
 11/06/2024 22:34:05 - [INFO] - Registo Cliente ruben com sucesso.
 11/06/2024 22:34:05 - [INFO] - Notificação para todos os utilizadores enviada.
+11/06/2024 23:23:50 - [INFO] - Servidor Iniciado na porta: 1234
+11/06/2024 23:24:09 - [INFO] - Servidor Iniciado na porta: 1234
+11/06/2024 23:24:46 - [INFO] - Cliente Conectado.
+11/06/2024 23:24:46 - [INFO] - Chave publica recebida.
+11/06/2024 23:24:46 - [INFO] - Chave AES encriptada enviada para o cliente.
+11/06/2024 23:24:46 - [INFO] - Pedido para Login recebido.
+11/06/2024 23:24:48 - [ERROR] - Login falhado password/username errados.
+11/06/2024 23:24:56 - [INFO] - Chave publica recebida.
+11/06/2024 23:24:56 - [INFO] - Chave AES encriptada enviada para o cliente.
+11/06/2024 23:24:56 - [INFO] - Pedido para Login recebido.
+11/06/2024 23:24:56 - [INFO] - Cliente aaa logado com sucesso.
+11/06/2024 23:24:56 - [INFO] - Notificação para todos os utilizadores enviada.
+11/06/2024 23:25:09 - [INFO] - Cliente Conectado.
+11/06/2024 23:25:09 - [INFO] - Chave publica recebida.
+11/06/2024 23:25:09 - [INFO] - Chave AES encriptada enviada para o cliente.
+11/06/2024 23:25:09 - [INFO] - Pedido para Login recebido.
+11/06/2024 23:25:09 - [INFO] - Cliente maria logado com sucesso.
+11/06/2024 23:25:09 - [INFO] - Notificação para todos os utilizadores enviada.
+11/06/2024 23:25:28 - [INFO] - Nome do cliente comunicador enviado para o cliente comunicado.
+11/06/2024 23:25:28 - [INFO] - Pacote para informar uma comunicação entre dois clientes enviada.
+11/06/2024 23:25:28 - [INFO] - Chave AES para a comunicação dos clientes enviada.
+11/06/2024 23:25:30 - [INFO] - Nome do cliente comunicador enviado para o cliente comunicado.
+11/06/2024 23:25:30 - [INFO] - Pacote para informar uma comunicação entre dois clientes enviada.
+11/06/2024 23:25:30 - [INFO] - Chave AES para a comunicação dos clientes enviada.
+11/06/2024 23:25:31 - [INFO] - Nome do cliente comunicador enviado para o cliente comunicado.
+11/06/2024 23:25:31 - [INFO] - Pacote para informar uma comunicação entre dois clientes enviada.
+11/06/2024 23:25:31 - [INFO] - Chave AES para a comunicação dos clientes enviada.

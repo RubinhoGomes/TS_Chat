@@ -331,20 +331,7 @@ namespace Client1 {
                 txtMensagem.Text = "";
             }
         }
-        //Teste prático
-        private void btVerificarHash_Click(object sender, EventArgs e) {
-            if (client.informComunication != null && client.signatureValidation!=null) {
-                
-                byte[] validacao = client.signatureValidation;
-                string validacaoString = Encoding.UTF8.GetString(validacao, 0, validacao.Length);
-
-                if (validacaoString == "true") {
-                    txtHashVerificada.Text = "True";
-                } else if(validacaoString == "false") {
-                    txtHashVerificada.Text = "False";
-                }
-            }
-        }
+        
     }
 }
 

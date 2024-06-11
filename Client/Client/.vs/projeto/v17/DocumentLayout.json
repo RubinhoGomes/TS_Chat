@@ -5,26 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D29D30C6-FF20-4ABC-A8D6-98794B4A626F}|Client1\\Client1.csproj|c:\\users\\frank\\onedrive\\ambiente de trabalho\\ts_chat\\client\\client\\client1\\client1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D29D30C6-FF20-4ABC-A8D6-98794B4A626F}|Client1\\Client1.csproj|solutionrelative:client1\\client1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9FA2B67-5362-40E3-AAD1-693D83753357}|Servidor\\Servidor.csproj|c:\\users\\frank\\onedrive\\ambiente de trabalho\\ts_chat\\client\\client\\servidor\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9FA2B67-5362-40E3-AAD1-693D83753357}|Servidor\\Servidor.csproj|solutionrelative:servidor\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9FA2B67-5362-40E3-AAD1-693D83753357}|Servidor\\Servidor.csproj|c:\\users\\frank\\onedrive\\ambiente de trabalho\\ts_chat\\client\\client\\servidor\\mensagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9FA2B67-5362-40E3-AAD1-693D83753357}|Servidor\\Servidor.csproj|solutionrelative:servidor\\mensagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9FA2B67-5362-40E3-AAD1-693D83753357}|Servidor\\Servidor.csproj|c:\\users\\frank\\onedrive\\ambiente de trabalho\\ts_chat\\client\\client\\servidor\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9FA2B67-5362-40E3-AAD1-693D83753357}|Servidor\\Servidor.csproj|solutionrelative:servidor\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9FA2B67-5362-40E3-AAD1-693D83753357}|Servidor\\Servidor.csproj|c:\\users\\frank\\onedrive\\ambiente de trabalho\\ts_chat\\client\\client\\servidor\\authcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9FA2B67-5362-40E3-AAD1-693D83753357}|Servidor\\Servidor.csproj|solutionrelative:servidor\\authcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9FA2B67-5362-40E3-AAD1-693D83753357}|Servidor\\Servidor.csproj|c:\\users\\frank\\onedrive\\ambiente de trabalho\\ts_chat\\client\\client\\servidor\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9FA2B67-5362-40E3-AAD1-693D83753357}|Servidor\\Servidor.csproj|solutionrelative:servidor\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,73 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Server.cs",
-              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\Ambiente de Trabalho\\TS_Chat\\Client\\Client\\Servidor\\Server.cs",
-              "RelativeDocumentMoniker": "Servidor\\Server.cs",
-              "ToolTip": "C:\\Users\\frank\\OneDrive\\Ambiente de Trabalho\\TS_Chat\\Client\\Client\\Servidor\\Server.cs",
-              "RelativeToolTip": "Servidor\\Server.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T21:56:03.306Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Mensagem.cs",
-              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\Ambiente de Trabalho\\TS_Chat\\Client\\Client\\Servidor\\Mensagem.cs",
-              "RelativeDocumentMoniker": "Servidor\\Mensagem.cs",
-              "ToolTip": "C:\\Users\\frank\\OneDrive\\Ambiente de Trabalho\\TS_Chat\\Client\\Client\\Servidor\\Mensagem.cs",
-              "RelativeToolTip": "Servidor\\Mensagem.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T21:50:52.362Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Logger.cs",
-              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\Ambiente de Trabalho\\TS_Chat\\Client\\Client\\Servidor\\Logger.cs",
-              "RelativeDocumentMoniker": "Servidor\\Logger.cs",
-              "ToolTip": "C:\\Users\\frank\\OneDrive\\Ambiente de Trabalho\\TS_Chat\\Client\\Client\\Servidor\\Logger.cs",
-              "RelativeToolTip": "Servidor\\Logger.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T21:50:51.712Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthContext.cs",
-              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\Ambiente de Trabalho\\TS_Chat\\Client\\Client\\Servidor\\AuthContext.cs",
-              "RelativeDocumentMoniker": "Servidor\\AuthContext.cs",
-              "ToolTip": "C:\\Users\\frank\\OneDrive\\Ambiente de Trabalho\\TS_Chat\\Client\\Client\\Servidor\\AuthContext.cs",
-              "RelativeToolTip": "Servidor\\AuthContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T21:50:50.98Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Auth.cs",
-              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\Ambiente de Trabalho\\TS_Chat\\Client\\Client\\Servidor\\Auth.cs",
-              "RelativeDocumentMoniker": "Servidor\\Auth.cs",
-              "ToolTip": "C:\\Users\\frank\\OneDrive\\Ambiente de Trabalho\\TS_Chat\\Client\\Client\\Servidor\\Auth.cs",
-              "RelativeToolTip": "Servidor\\Auth.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T21:50:50.266Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -110,7 +25,7 @@
               "ToolTip": "C:\\Users\\frank\\OneDrive\\Ambiente de Trabalho\\TS_Chat\\Client\\Client\\Client1\\Client1.cs [Design]",
               "RelativeToolTip": "Client1\\Client1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T16:43:23.45Z",
+              "WhenOpened": "2024-06-11T22:20:13.623Z",
               "EditorCaption": " [Design]"
             }
           ]
